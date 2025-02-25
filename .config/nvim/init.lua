@@ -35,4 +35,5 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
+vim.cmd("au! BufRead,BufNewFile *.vert,*.frag,*.vshader,*.fshader set filetype=glsl")
 vim.cmd("colorscheme "..colorscheme)
